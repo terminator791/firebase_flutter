@@ -47,6 +47,19 @@ class _NurseHomePageState extends State<NurseHomePage> {
     });
   }
 
+  // Fungsi untuk mematikan permintaan bantuan
+  void disableHelpRequest(String patientId) async {
+    try {
+      await database.child("help_requests/$patientId").update({
+        "status": 0,
+        "pesan": "",
+      });
+      print("Permintaan bantuan untuk $patientId telah dimatikan.");
+    } catch (e) {
+      print("Terjadi kesalahan saat mematikan permintaan: $e");
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -69,10 +82,15 @@ class _NurseHomePageState extends State<NurseHomePage> {
                       subtitle: Text(isRequestingHelp
                           ? "Pesan: $message"
                           : "Tidak meminta bantuan."),
-                      trailing: Icon(
-                        isRequestingHelp ? Icons.warning : Icons.check_circle,
-                        color: isRequestingHelp ? Colors.red : Colors.green,
-                      ),
+                      trailing: isRequestingHelp
+                          ? IconButton(
+                              icon: Icon(Icons.close, color: Colors.red),
+                              onPressed: () => disableHelpRequest(patientId),
+                            )
+                          : Icon(
+                              Icons.check_circle,
+                              color: Colors.green,
+                            ),
                     ),
                   );
                 },
