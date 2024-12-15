@@ -49,29 +49,29 @@ class _NurseHomePageState extends State<NurseHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    // Filter help requests to only include those with status 1
+    final requestingHelp = helpRequests.entries.where((entry) => entry.value["status"] == 1).toList();
+
     return Scaffold(
       appBar: AppBar(title: Text("Monitor Permintaan Bantuan")),
       body: Center(
-        child: helpRequests.isEmpty
+        child: requestingHelp.isEmpty
             ? Text("Tidak ada permintaan bantuan.")
             : ListView.builder(
-                itemCount: helpRequests.length,
+                itemCount: requestingHelp.length,
                 itemBuilder: (context, index) {
-                  String patientId = helpRequests.keys.elementAt(index);
-                  Map<dynamic, dynamic> request = helpRequests[patientId];
-                  bool isRequestingHelp = request["status"] == 1;
+                  String patientId = requestingHelp[index].key;
+                  Map<dynamic, dynamic> request = requestingHelp[index].value;
                   String message = request["pesan"] ?? "";
 
                   return Card(
                     margin: EdgeInsets.all(10),
                     child: ListTile(
                       title: Text("$patientId"),
-                      subtitle: Text(isRequestingHelp
-                          ? "Pesan: $message"
-                          : "Tidak meminta bantuan."),
+                      subtitle: Text("Pesan: $message"),
                       trailing: Icon(
-                        isRequestingHelp ? Icons.warning : Icons.check_circle,
-                        color: isRequestingHelp ? Colors.red : Colors.green,
+                        Icons.warning,
+                        color: Colors.red,
                       ),
                     ),
                   );
