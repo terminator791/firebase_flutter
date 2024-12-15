@@ -1,0 +1,125 @@
+{
+  "project_info": {
+    "project_number": "570245314355",
+    "firebase_url": "https://esiot2024-80ec9-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "esiot2024-80ec9",
+    "storage_bucket": "esiot2024-80ec9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570245314355:android:08d848f23a46ce187fb046",
+        "android_client_info": {
+          "package_name": "com.esiot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqIleFnUp_9VOxWTzCipmXJYcD1AJKg4I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570245314355:android:330c20fde84f7f8a7fb046",
+        "android_client_info": {
+          "package_name": "com.esiot32"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqIleFnUp_9VOxWTzCipmXJYcD1AJKg4I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570245314355:android:beb40acab9588dc07fb046",
+        "android_client_info": {
+          "package_name": "com.esiot32flutter.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqIleFnUp_9VOxWTzCipmXJYcD1AJKg4I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570245314355:android:da0426957797b3337fb046",
+        "android_client_info": {
+          "package_name": "com.esiot_pasien"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqIleFnUp_9VOxWTzCipmXJYcD1AJKg4I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570245314355:android:5e512a82f73509ae7fb046",
+        "android_client_info": {
+          "package_name": "com.example.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqIleFnUp_9VOxWTzCipmXJYcD1AJKg4I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570245314355:android:c6677ad372ada5497fb046",
+        "android_client_info": {
+          "package_name": "com.example.esiot_flutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqIleFnUp_9VOxWTzCipmXJYcD1AJKg4I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
